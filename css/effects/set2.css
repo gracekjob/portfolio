@@ -242,6 +242,8 @@ figure.effect-oscar figcaption::before {
 
 figure.effect-oscar h2 {
 
+	font-family: 'Poppins', 'Open Sans', sans-serif;
+
 	font-weight:400;
 	
 	margin: 0; /*g*/
