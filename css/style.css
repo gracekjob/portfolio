@@ -236,11 +236,11 @@ footer[role="footer"]{ background-color:#FFF; padding-top:100px; padding-bottom:
 
 footer[role="footer"] > h1 a{ margin:0 auto; display:block; max-width:66px;}
 
-footer[role="footer"] nav{ padding-top:37px; padding-bottom:43px}
+footer[role="footer"] nav{ padding-top:37px; padding-bottom:43px; text-align:center}
 
 footer[role="footer"] nav > ul{ text-align:center; padding:0; margin:0}
 
-footer[role="footer"] nav > ul > li{ display: inline-block; text-transform:uppercase; font-size:15px; margin:0 13px}
+footer[role="footer"] nav > ul > li{ display: block; text-transform:uppercase; font-size:15px; margin:0 13px}
 
 footer[role="footer"] nav > ul > li > a{ color:#9d9d9d}
 
@@ -516,6 +516,34 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 						.btn_next{
 							float: right;
 						}
+
+/* Button for CTA */
+a:hover, .btn_cta:hover{
+	text-decoration: none;
+}
+
+.btn_cta{
+	display: inline-block;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-weight: 400;
+	font-size: 20px;
+	padding: 15px 40px;
+	margin: 25px auto;
+	text-transform: lowercase;
+	color: #f6f6f6;
+	background-color: #fb5353;
+
+}
+
+.btn_cta:hover{
+	color: #f6f6f6;
+	opacity: 0.6;
+}
+
+.white{
+	color: #fff;
+}
+
 /* Awards */
 .awards img{
 	display: inline-block;
