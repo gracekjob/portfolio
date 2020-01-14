@@ -1,0 +1,83 @@
+/* Tags in index */
+
+.grid .col-tag figcaption{
+	text-align: left;
+    padding: 40px;
+}
+
+.intro_tag{
+	color: #404040;
+	font-size: 30px;
+	font-weight: 800;
+	line-height: initial;
+	margin-bottom: 6%;
+}
+
+.tag{
+	display: inline-block;
+	width: 100%;
+	text-transform: lowercase;
+	white-space: nowrap;
+	text-align: left;
+	padding: 3% 18%;
+	margin-bottom: 5%;
+	border: solid 1px #ff9090;
+	opacity: 1;
+	transition: .3s ease-out;
+}
+
+figure .tag h2{
+	display: inline-block;
+	font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fb5353;
+}
+
+figure .inactive h2{
+	color: #f6f6f6;
+}
+
+.inactive{
+	background-color: #D8DCDD;
+	position: relative;
+	border: 0;
+}
+
+.inactive h2{
+	transform: translateX(-230px);
+	transition: transform .8s;
+}
+
+.inactive h2:first-child{
+	transform: translateX(-200%);
+}
+
+.inactive:hover h2{
+	transform: translateX(120%);
+}
+
+.inactive:hover h2:first-child{
+	transform: translateX(0);
+}
+
+.tag:hover{
+	opacity: 0.6;
+	padding-left: 25%;
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+	figure .tag h2 {
+	    font-size: 20px;
+	}
+
+	.inactive h2{
+		transform: translateX(-154px);
+	}
+}
+
+@media (max-width: 767px){
+	.grid .col-tag figcaption{
+	    padding: 0px;
+	    transform: scale(0.8) translateY(-10%);
+	}
+}
