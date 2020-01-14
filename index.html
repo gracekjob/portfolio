@@ -462,11 +462,19 @@
 		<link href="https://cdn.jsdelivr.net/npm/busy-load/dist/app.min.css" rel="stylesheet">
 		
 		<script>
-			$("img").busyLoad("show", {
-				background: "#000",
-				spinner: "cube",
-				animation: "slide"
-			});
+			// busy load
+
+            $(document).ready(function(){
+
+                 // $.busyLoadSetup({ spinner: "cube", text: "LOADING ...", animation: "fade", background: "rgba(0,0,0,.5)" });
+                 $.busyLoadSetup({ spinner: "", text: "LOADING ...",fontSize: "1.8rem",textMargin: "3rem",textPosition: "bottom", animation: "fade",animationDuration: "slow",minSize: "60px", background: "rgba(251,83,83,.9)" });
+
+                 $.busyLoadFull("show");
+
+                $(window).on('load',function(){
+                    $.busyLoadFull("hide");
+                })
+            })
 		</script>
 		
         <!-- custom -->
